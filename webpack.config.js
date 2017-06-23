@@ -8,8 +8,6 @@ module.exports = {
     entry: {
         widgetA: ['./']
     },
-
-
     output: {
         path: resolve(__dirname, 'dist'),
         filename: '[name].js',
