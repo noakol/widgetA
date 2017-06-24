@@ -15,9 +15,7 @@ module.exports = {
         library: 'widgetA',
         libraryTarget: 'umd'
     },
-
     context: resolve(__dirname, 'src'),
-
     module: {
         rules: [{
             test: /.js|.jsx?$/,
