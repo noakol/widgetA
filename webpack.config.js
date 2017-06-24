@@ -8,6 +8,7 @@ module.exports = {
     entry: {
         widgetA: ['./']
     },
+    externals: Object.keys(pkg.dependencies),
     output: {
         path: resolve(__dirname, 'dist'),
         filename: '[name].js',
@@ -19,7 +20,7 @@ module.exports = {
 
     module: {
         rules: [{
-            test: /.jsx?$/,
+            test: /.js|.jsx?$/,
             include: resolve(__dirname, 'src'),
             loader: 'babel-loader',
             options: {
