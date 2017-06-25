@@ -32,7 +32,7 @@ module.exports = {
     },
 
     plugins: [
-        new HtmlPlugin(),
+        // new HtmlPlugin(),
         new BundleAnalyzerPlugin()
     ]
 };

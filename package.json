@@ -1,6 +1,6 @@
 {
   "name": "widgetA",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "",
   "main": "dist/widgetA.js",
   "scripts": {
@@ -28,6 +28,7 @@
     "webpack-bundle-analyzer": "^2.8.2"
   },
   "dependencies": {
+    "classnames": "^2.2.5",
     "lodash": "^4.17.4",
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
