@@ -8,12 +8,9 @@ module.exports = {
     entry: {
         widgetA: ['./']
     },
-    // externals: {
-    //     react: {root: 'React', commonjs2: 'react', commonjs: 'react', amd: 'react'},
-    //     'react-dom': {root: 'ReactDOM', commonjs2: 'react-dom', commonjs: 'react-dom', amd: 'react-dom'}
-    // },
+    externals: Object.keys(pkg.dependencies),
     output: {
-        path: PATH.resolve(__dirname, 'dist'),
+        path: PATH.resolve(__dirname, 'lib'),
         filename: '[name].js',
         library: 'widgetA',
         libraryTarget: 'umd'
